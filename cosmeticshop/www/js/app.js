@@ -271,7 +271,7 @@ function catalogueObject(_jsonDataUrl) {
 catalogueObject.prototype = {
 	onZoomEnd : function() {
 		console.dir(this);
-		alert("test 2");
+		alert("test");
 
 		var pageCount = $('.page').length;
 		console.dir(pageCount);
