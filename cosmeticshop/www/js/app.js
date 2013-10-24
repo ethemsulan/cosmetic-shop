@@ -316,6 +316,8 @@ catalogueObject.prototype = {
 				zoom : true,
 				mouseWheel : true,
 				wheelAction : 'zoom',
+				zoomMax: 4,
+				checkDOMChanges: true,
 
 				scrollX : true,
 				scrollY : true,
@@ -327,7 +329,8 @@ catalogueObject.prototype = {
 				snapThreshold : 1
 			});
 // 			burasicalismiyor
-			this.scrollObj.on('zoomEnd', this.onZoomEnd);
+		    this.scrollObj.on('zoomEnd', this.onZoomEnd);
+			
 		} else {
 			this.scrollObj.refresh();
 		}
