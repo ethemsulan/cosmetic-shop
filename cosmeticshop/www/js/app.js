@@ -271,7 +271,7 @@ function catalogueObject(_jsonDataUrl) {
 catalogueObject.prototype = {
 	onZoomEnd : function() {
 		console.dir(this);
-		alert("zoom end");
+		alert("test");
 
 		var pageCount = $('.page').length;
 		console.dir(pageCount);
@@ -326,6 +326,7 @@ catalogueObject.prototype = {
 				keyBindings : true,
 				snapThreshold : 1
 			});
+// 			burasicalismiyor
 			this.scrollObj.on('zoomEnd', this.onZoomEnd);
 		} else {
 			this.scrollObj.refresh();
